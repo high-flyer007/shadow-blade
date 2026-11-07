@@ -30,8 +30,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build site
-        run: npm run build
+      - name: Build frontend
+        run: npx vite build
         env:
           GITHUB_ACTIONS: "true"
           VITE_CONVEX_URL: https://effervescent-guanaco-255.convex.cloud
